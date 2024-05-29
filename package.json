@@ -1,6 +1,6 @@
 {
   "name": "storeschema",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "this is composite model of mongodb ",
   "type": "commonjs",
   "types": "index.d.ts",
