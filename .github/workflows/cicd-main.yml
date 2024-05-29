@@ -16,7 +16,10 @@ jobs:
         with:
           node-version: 16
           registry-url: 'https://registry.npmjs.org/'
-       
+
+      - name: Login NPM
+        run: npm login --registry=${{ secrets.NPM_TOKEN }}
+
       - name: Publish to NPM
         run: npm publish --registry=${{ secrets.NPM_TOKEN }}
 
