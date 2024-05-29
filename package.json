@@ -1,9 +1,8 @@
 {
   "name": "storeschema",
-  "version": "1.0.5",
+  "version": "1.0.11",
   "description": "this is composite model of mongodb ",
   "type": "commonjs",
-  "types": "index.d.ts",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

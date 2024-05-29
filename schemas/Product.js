@@ -1,4 +1,4 @@
-const { Schema } = require('mongoose')
+const { Schema, model } = require('mongoose')
 
 const Review = new Schema({
     name: { type: String, required: true },
@@ -11,7 +11,7 @@ const Review = new Schema({
     }
 }, { _id: false })
 
-const Product = new Schema({
+const ProductSchema = new Schema({
 
     name: { type: String, required: true },
     image: { type: String, required: true },
@@ -28,6 +28,8 @@ const Product = new Schema({
     timestamps: true
 })
 
-Product.index({ category : 1 , })
 
-module.exports = Product
+
+ProductSchema.index({ category : 1 , })
+
+exports.Product = model('Product', ProductSchema)

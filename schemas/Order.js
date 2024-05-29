@@ -1,6 +1,6 @@
-const { Schema } = require('mongoose')
+const { Schema, model } = require('mongoose')
 
-const Order = new Schema({
+const OrderSchema = new Schema({
     user: {
         type: Schema.Types.ObjectId,
         required: true,
@@ -88,4 +88,4 @@ const Order = new Schema({
     },
 })
 
-module.exports = Order
+exports.Order = model('Order', OrderSchema)
