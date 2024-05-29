@@ -1,0 +1,7 @@
+.idea/
+.npmrc
+.vscode/
+.gitlab-ci.yml
+.release-it.json
+test/
+release-scripts/
