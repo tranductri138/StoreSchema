@@ -1,7 +1,6 @@
 const { Schema } = require('mongoose')
-const { BaseSchema } = require('../core')
 
-const Order = new BaseSchema({
+const Order = new Schema({
     user: {
         type: Schema.Types.ObjectId,
         required: true,
@@ -88,7 +87,5 @@ const Order = new BaseSchema({
         timestamps: true,
     },
 })
-
-// Order.index({name: 'text'})
 
 module.exports = Order

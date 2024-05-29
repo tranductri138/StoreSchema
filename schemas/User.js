@@ -1,6 +1,6 @@
-const { BaseSchema } = require('../core')
+const { Schema } = require('mongoose')
 
-const User = new BaseSchema({
+const User = new Schema({
     username: {
         type: String,
         required: true,
