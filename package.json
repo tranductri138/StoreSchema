@@ -18,9 +18,7 @@
   },
   "homepage": "https://github.com/tranductri138/StoreSchema#readme",
   "devDependencies": {
-    "@types/node": "^20.12.12"
-  },
-  "peerDependencies": {
-    "mongoose": "5.13.22"
+    "@types/node": "^20.12.12",
+    "mongoose": "^8.4.1"
   }
 }
